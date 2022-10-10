@@ -89,6 +89,7 @@ class Unet(SegmentationModel):
             out_channels=classes,
             activation=activation,
             kernel_size=3,
+            dropout=0.2
         )
 
         if aux_params is not None:
